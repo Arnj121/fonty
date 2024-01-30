@@ -1,23 +1,26 @@
-# WebOS: A web-based operating system
-A web-based operating system that allows virtualization of an operating system which can be accessed through a web browser. Virtualization services that provides users with easy access to a web-based OS and services through applications within the OS.
-
+# Fonty: NodeJS server that provides fonts
+A server implemented using node and express that provides fonts for web pages.
 <img align="right" src= "https://github.com/amdegroot/ssd.pytorch/blob/master/doc/ssd.png" height = 400/>
 
 ### Table of Contents
 - <a href='#installation'>Installation</a>
 - <a href="#usage">Usage</a>
-- <a href='#demos'>Demos</a>
-
-
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
 
 ## Installation
+### Installation using Node
 - Install [NodeJS](https://nodejs.org/en/download) by selecting your Operating System.
-- Install [MongoDB](https://www.mongodb.com/try/download/community) Community server by selecting your Operating System.
-
-
-## Demos
-
+- clone this repo using ``git clone https://github.com/Arnj121/fonty.git``
+- Install all dependencies using ``npm install``.
+- Start the server using ``node server``.
+### Installation using docker
+- Install [Docker](https://www.docker.com/products/docker-desktop/) by selecting your OS.
+- start docker desktop and docker engine.
+- using docker hub. search for the image and run it as a container
+- the container should run on port 2045.
+## Usage
+- To use the fonts, include the following tag in your ``<header>`` tag
+``<link href="http://localhost:2045/public/fontawesome.css" rel="stylesheet" type="text/css"/>``
+- And use the syntax to use the fonts in your webpage
+``<i class="fal fa-arrow-right></i>``
+- Refer the [Font Awesome](https://fontawesome.com/icons) website for more icons and how to use them.
+- The default port is 2045, this can be changed by editing the [server.js](https://github.com/Arnj121/fonty/blob/master/server.js) file.
