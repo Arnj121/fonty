@@ -1,6 +1,5 @@
 # Fonty: NodeJS server that provides fonts
 A server implemented using node and express that provides fonts for web pages.
-<img align="right" src= "https://github.com/amdegroot/ssd.pytorch/blob/master/doc/ssd.png" height = 400/>
 
 ### Table of Contents
 - <a href='#installation'>Installation</a>
