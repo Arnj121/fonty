@@ -1,5 +1,2 @@
 node_modules
-dockerfile
-.dockerignore
 .idea
-initIP.js

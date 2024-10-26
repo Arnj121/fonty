@@ -1,0 +1,6 @@
+services:
+  fonty:
+    build: .
+    container_name: fonty
+    ports:
+      - 2045:2045

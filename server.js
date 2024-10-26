@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path')
 const cors = require('cors')
+const dns = require('node:dns')
+const os = require('node:os')
 require('dotenv').config()
 const corsoptions ={
     origin:'*',
@@ -12,6 +14,10 @@ server.use('/public',express.static(path.join(__dirname,'static')))
 server.use('/',express.static(path.join(__dirname,'static')))
 server.get('/test',(req,res)=>{
 	res.send({'msg':'recieving'})})
-server.listen(process.env.PORT,process.env.HOST,()=>{
-    console.log(`serving font awesome icons on http://${process.env.HOST}:${process.env.PORT}/`)
+
+dns.lookup(os.hostname(),{'family':4},(err,addr)=>{
+    server.listen(process.env.PORT,addr,()=>{
+        console.log(`serving font awesome icons on http://${addr}:${process.env.PORT}/`)
+    })
 })
+
