@@ -1,6 +1,7 @@
+.idea
 Dockerfile
 node_modules
 README.md
 .gitignore
 .dockerignore
-docker-compose.yaml
+docker-compose-fonty.yaml
