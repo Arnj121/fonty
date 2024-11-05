@@ -20,4 +20,3 @@ dns.lookup(os.hostname(),{'family':4},(err,addr)=>{
         console.log(`serving font awesome icons on http://${addr}:${process.env.PORT}/`)
     })
 })
-
